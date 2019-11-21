@@ -1,0 +1,33 @@
+<table class="ui selectable inverted table">
+    <thead>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th>
+                <div class="ui right floated small primary labeled icon button">
+                    <i class="user icon"></i> Add User
+                </div>
+            </th>
+        </tr>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Domain</th>
+            <th>Aliases</th>
+            <th class="right aligned">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for orga in orgas %}
+        <tr>
+                <td>{{orga.id}}</td>
+            <td>{{orga.name}}</td>
+            <td>{{orga.domain}}</td>
+            <td>{{orga.aliases}}</td>
+            <td class="right aligned">None</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
